@@ -13,14 +13,13 @@ st.write(
 )
 
 ctx = snowflake.connector.connect(
-    user=os.environ['snowflakeuser'],
-    password=os.environ['snowflakepass'],
+    user='DPERUMAN',
+    password='wL#$b4!T5rg',
     account='khzxowp-rf86620',
-    warehouse='your-warehouse-name',
-    role ='ACCOUNTADMIN',
-    database= 'ADT_PROJECT',
-    schema = 'SUPERSTORE'
-    )
+    role = 'ACCOUNTADMIN',
+    warehouse='COMPUTE_WH',
+    database='ADT_PROJECT',
+    schema ='SUPERSTORE')
 
 cs = ctx.cursor()
 
